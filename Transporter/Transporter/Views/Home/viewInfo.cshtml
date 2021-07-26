@@ -1,0 +1,96 @@
+﻿@model CreateOrderVM
+
+<br />
+<br />
+
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="text-black-50">
+                        <h4 class="title">Shipment Info</h4>
+                    </div>
+                    <div class="content">
+                        <form action="register" method="post">
+
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label>Transaction Id</label>
+                                        <input type="text" asp-for="TransactionId" class="form-control" placeholder="Transaction Id">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label>Customer Name</label>
+                                        <input type="text" asp-for="CustomerName" class="form-control" placeholder="Customer Name">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label>Customer PhoneNo</label>
+                                            <input type="text" asp-for="CustomerPhoneNo" class="form-control" placeholder="Customer PhoneNo">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label>Receiver Name</label>
+                                            <input type="text" asp-for="ReceiverName" class="form-control" placeholder="Receiver Name">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label>Receiver PhoneNo</label>
+                                            <input type="text" asp-for="ReceiverPhoneNo" class="form-control" placeholder="Receiver PhoneNo">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Sender Address</label>
+                                        <input type="text" asp-for="SenderAddress" class="form-control" placeholder="Sender Address">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Receiver Address</label>
+                                    <input type="text" asp-for="ReceiverAddress" class="form-control" placeholder="Receiver Address">
+                                </div>
+                            </div>
+
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label>Transaction Date</label>
+                                    <input type="date" asp-for="TransactionDate" class="form-control" placeholder="Transaction Date">
+                                </div>
+                            </div>
+
+
+                            <div class="">
+                                <button type="submit" class="btn btn-info btn-fill">Edit Shipment</button>
+                                <a asp-controller="home" asp-action="ViewInfo" class="btn btn-warning btn-fill">Cancel</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
